@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="391dp"
         android:layout_height="357dp"
         android:layout_marginBottom="124dp"
@@ -114,4 +115,39 @@
 
 
     </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/winnerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="187dp"
+        android:layout_marginBottom="10dp"
+        android:text="TextView"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/playAgainButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="88dp"
+        android:onClick="playAgain"
+        android:text="Play Again"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winnerTextView"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
